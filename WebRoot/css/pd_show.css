@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+#content {
+width:700px;
+margin-top:10px;
+margin-left:10px;
+
+
+}
+
+.selecter .selecterBtns {
+float:left;
+width:700px;
+margin-bottom:10px;
+}
+
+.selecter .selecterBtns a {
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+border-radius:8px;
+background:#EDEDED;
+color:#111;
+display:block;
+float:left;
+font-size:11px;
+line-height:28px;
+margin-right:4px;
+outline:none;
+padding:0 15px;
+text-decoration:none;
+}
+
+.selecter .selecterBtns .active,
+.selecter .selecterBtns a:hover {
+background:#111;
+color:#fff;
+}
+
+.selecter .selecterContent {
+float:left;
+width:700px;
+clear:both;
+}
+
+.selecter .selecterContent a {
+outline:none;
+}
+
+.selecter .selecterContent li {
+width:160px;
+height:180px;
+overflow:hidden;
+}
+.selecter .selecterContent li span{
+	width:160px;
+	height:20px;
+	margin-top:160px;
+	}
+.selecter .selecterContent li .products_black_title{
+	color:#FFF;
+	background-color:rgb(51,51,51);
+	
+	}
+	
+	.selecter .selecterContent li .products_gray_title{
+	color:rgb(51,51,51);
+	background-color:rgb(153,153,153);
+	}
+
+.selecter ul.nolist,
+.selecter ul.nolist li {
+display:block;
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.selecter ul.nolist li {
+float:left;
+margin:0 5px 0px 0;	
+}
+
+.selecter a {
+color:#fff;
+}
+
+.selecter a img {
+border:none;
+}

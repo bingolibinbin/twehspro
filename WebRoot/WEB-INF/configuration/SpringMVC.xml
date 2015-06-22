@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<!-- velocity的配置 -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+		<property name="contentType" value="text/html;charset=utf-8" />
+		<property name="viewNames" value="*.htm,*.html,*.vm" />
+	</bean>
+
+	<bean id="velocityConfigurer" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<!-- resourceLoaderPath属性通知Velocity到哪里找到velocity模板 -->
+		<property name="resourceLoaderPath" value="/mv/"/>
+		<property name="velocityProperties">
+			<props>
+				<prop key="input.encoding">utf-8</prop>
+				<prop key="output.encoding">utf-8</prop>
+				
+				
+				
+			</props>
+		</property> 
+	</bean>
+	
+	<!-- 数据源的定义 -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>/WEB-INF/configuration/properties/dbConnectionForMysql.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${driverClassName}"></property>
+		<property name="url" value="${url}"></property>
+		<property name="username" value="${username}"></property>
+		<property name="password" value="${password}"></property>
+	</bean>
+	
+	<!-- ibatis的配置 -->
+	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="configLocations" value="/WEB-INF/configuration/SqlMapConfig.xml"></property>
+	</bean>
+    
+    
+    <!-- 下面手动配置 -->
+
+
+
+	<!-- DAO层 -->
+   <bean id="companyDAO" class="com.twehs.dao.company.impl.CompanyDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient" />
+	</bean>
+	
+      <bean id="newsDAO" class="com.twehs.dao.content.impl.ContentDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient" />
+	 </bean>
+	 
+	 
+	 <bean id="menuDAO" class="com.twehs.dao.power.impl.MenuDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient" />
+	 </bean>
+	 
+	  <bean id="productsDAO" class="com.twehs.dao.content.impl.ContentDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient" />
+	 </bean>
+	 
+	  <bean id="supportsDAO" class="com.twehs.dao.content.impl.ContentDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient" />
+	 </bean>
+	 
+	 <bean id="projectsDAO" class="com.twehs.dao.content.impl.ContentDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient" />
+	 </bean>
+	 
+	  <bean id="expDAO" class="com.twehs.dao.content.impl.ContentDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient" />
+	  </bean>
+	 
+	  <bean id="commentDAO" class="com.twehs.dao.content.impl.CommentDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient" />
+	 </bean>
+	 
+	  <bean id="typeDAO" class="com.twehs.dao.power.impl.TypeDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient" />
+	 </bean>
+
+
+
+
+
+	<!-- 服务层 -->
+    <bean id="companyService" class="com.twehs.service.company.impl.CompanyServiceImpl">
+		<property name="companyDAO" ref="companyDAO"></property>
+	</bean>
+	
+	
+	<bean id="commentService" class="com.twehs.service.classify.impl.CommentServiceImpl">
+		<property name="commentDAO">
+			<ref local="commentDAO" />
+		</property>
+	</bean>
+
+
+    <bean id="newsService" class="com.twehs.service.classify.impl.NewsServiceImpl">
+		<property name="newsDAO">
+			<ref local="newsDAO" />
+		</property>
+		
+		<property name="typeDAO">
+			<ref local="typeDAO" />
+		</property>
+		
+	</bean>
+
+    
+	<bean id="menuService" class="com.twehs.service.menu.impl.MenuServiceImpl">
+		<property name="menuDAO">
+			<ref local="menuDAO" />
+		</property>
+	</bean>
+
+
+
+    <bean id="productsService" class="com.twehs.service.classify.impl.ProductsServiceImpl">
+		<property name="productsDAO">
+			<ref local="productsDAO" />
+		</property>
+		
+		<property name="typeDAO">
+			<ref local="typeDAO" />
+		</property>
+		
+		<property name="menuDAO">
+			<ref local="menuDAO" />
+		</property>
+	</bean>
+		
+		
+	 <bean id="supportsService" class="com.twehs.service.classify.impl.SupportServiceImpl">
+		<property name="supportsDAO">
+			<ref local="supportsDAO" />
+		</property>
+		
+		<property name="typeDAO">
+			<ref local="typeDAO" />
+		</property>
+	</bean>
+		
+		
+		
+    
+	<bean id="experiencesService" class="com.twehs.service.classify.impl.ExperiencesServiceImpl">
+		<property name="expDAO">
+			<ref local="expDAO" />
+		</property>
+		
+		<property name="typeDAO">
+			<ref local="typeDAO" />
+		</property>
+	</bean>
+		
+		
+		
+	<bean id="projectsService" class="com.twehs.service.classify.impl.ProjectsServiceImpl">
+		<property name="projectsDAO">
+			<ref local="projectsDAO" />
+		</property>
+		
+		<property name="typeDAO">
+			<ref local="typeDAO" />
+		</property>
+	</bean>
+	
+
+
+
+
+
+
+
+	<!-- 控制器 -->
+	<bean id="findCompanyController" class="com.twehs.controller.company.FindCompanyController">
+		<property name="companyService" ref="companyService"></property>
+	</bean>
+
+
+	<bean name="newsController" class="com.twehs.controller.classify.NewsController">
+		<property name="newsService">
+			<ref local="newsService" />
+		</property>
+		<property name="commentService">
+			<ref local="commentService" />
+		</property>
+		
+	</bean>
+	
+	
+
+	<bean name="supportsController" class="com.twehs.controller.classify.SupportController">
+	
+		<property name="supportsService">
+			<ref local="supportsService" />
+		</property>
+		<property name="commentService">
+			<ref local="commentService" />
+		</property>
+	</bean>
+	
+	<bean name="projectsController" class="com.twehs.controller.classify.ProjectController">
+	
+		<property name="projectsService">
+			<ref local="projectsService" />
+		</property>
+		<property name="commentService">
+			<ref local="commentService" />
+		</property>
+	</bean>
+
+
+
+    <bean name="experienceController" class="com.twehs.controller.classify.ExperienceController">
+	
+		<property name="experiencesService">
+			<ref local="experiencesService" />
+		</property>
+		<property name="commentService">
+			<ref local="commentService" />
+		</property>
+	</bean>
+    
+    
+	<bean name="productsController" class="com.twehs.controller.classify.ProductsController">
+		<property name="productsService">
+			<ref local="productsService" />
+		</property>
+		<property name="commentService">
+			<ref local="commentService" />
+		</property>
+		
+		<property name="menuService">
+			<ref local="menuService" />
+		</property>
+		
+	</bean>
+	
+	<bean name="defaultsController" class="com.twehs.controller.first.DefaultController">
+	
+		<property name="productsService">
+			<ref local="productsService" />
+		</property>
+		
+		<property name="menuService">
+			<ref local="menuService" />
+		</property>
+		
+		<property name="newsService">
+			<ref local="newsService" />
+		</property>
+		
+		<property name="projectsService">
+			<ref local="projectsService" />
+		</property>
+		
+		<property name="companyService">
+			<ref local="companyService" />
+		</property>
+		
+	</bean>
+	
+	
+	
+	
+
+
+    <!-- 请求映射一般情况 下是在Struts中配置的 -->
+	<!-- 请求映射 ,这里配置controller和对应的方法之间的映射-->
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				 <prop key="/test1.do">findCompanyController</prop>
+				
+				 <prop key="/newsList.do">newsController</prop> 
+				 <prop key="/newsShow.do">newsController</prop> 
+				 <prop key="/newsComment.do">newsController</prop> 
+				 
+				 <prop key="/productsListAll.do">productsController</prop> 
+				 <prop key="/productsListMenu.do">productsController</prop> 
+				 <prop key="/productsListType.do">productsController</prop> 
+		 		 <prop key="/productsShow.do">productsController</prop> 
+				 <prop key="/productsComment.do">productsController</prop>   
+				 
+				 
+				 <prop key="/supportsListAll.do">supportsController</prop> 
+				 <prop key="/supportsShow.do">supportsController</prop> 
+				 <prop key="/supportsComment.do">supportsController</prop>  
+				 
+				 <prop key="/projectsListAll.do">projectsController</prop> 
+				 <prop key="/projectsShow.do">projectsController</prop> 
+				 <prop key="/projectsComment.do">projectsController</prop>  
+				 
+				 <prop key="/experiencesListAll.do">experienceController</prop> 
+				 <prop key="/experiencesShow.do">experienceController</prop> 
+				 <prop key="/experiencesComment.do">experienceController</prop>  
+				 
+				 <prop key="/defaultListAll.do">defaultsController</prop>  
+				 
+			</props>
+		</property>
+	</bean>
+
+</beans>
+
+
+

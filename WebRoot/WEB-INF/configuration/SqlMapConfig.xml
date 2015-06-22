@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+	<settings cacheModelsEnabled="true" enhancementEnabled="true"
+		lazyLoadingEnabled="true" maxRequests="3000" maxSessions="3000"
+		maxTransactions="300" useStatementNamespaces="true" />
+
+	<!-- 配置ibatis -->
+	<!-- 等生成了sqlMap文件再添加到此处-->
+	<!--  <sqlMap resource="com/zhuchao/wmw/dao/mapping/user_SqlMap.xml" />  -->
+	
+		<sqlMap resource="com/twehs/pojo/xml/company_SqlMap.xml" />
+	     <sqlMap resource="com/twehs/pojo/xml/content_SqlMap.xml" />
+		<sqlMap resource="com/twehs/pojo/xml/ttype_SqlMap.xml" />
+		<sqlMap resource="com/twehs/pojo/xml/menu_SqlMap.xml" />
+		<sqlMap resource="com/twehs/pojo/xml/comment_SqlMap.xml" />
+		
+</sqlMapConfig>

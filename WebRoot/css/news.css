@@ -1,0 +1,186 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+/*news CSS开始*/
+body{
+	background-image:url(../images/bj.png);
+	background-repeat:repeat;
+	}
+#middle{
+	
+}
+#news{
+	width:1000px;
+	margin:10px auto;
+	text-align:left;
+}
+#news_navi{
+	width:180px;
+	border:1px solid rgb(204,204,204);
+	float:left;
+	min-height:300px;
+	}
+#news_navi h2{
+	background-image:url(../images/s_nav.gif);
+	background-repeat:repeat-x;
+	height:36px;
+	line-height:36px;
+	vertical-align:middle;
+	color:rgb(42,84,176);
+	padding-left:20px;
+	}
+#news_navi ul{
+	margin-top:10px;
+	}
+#news_navi li{
+	clear:left;
+	height:35px;
+	line-height:35px;
+	border-bottom:1px dotted rgb(136,136,136);
+	width:160px;
+	margin-left:10px;
+	}
+#news_navi li img{
+	margin-left:10px;
+	}
+#news_navi li a{
+	font-size:14px;
+	margin-left:10px;
+	}
+#news_text{
+	width:754px;
+	margin-left:8px;
+	float:left;	
+	}
+#news_text #position{
+	background-image:url(../images/r_nav.gif);
+	background-repeat:no-repeat;
+	height:36px;
+	line-height:36px;
+	vertical-align:middle;
+	color:rgb(42,84,176);
+	padding-left:20px;
+	}
+#news_text_contain{
+	margin-top:10px;
+	padding:10px;
+	border:1px solid rgb(204,204,204);
+	border-radius:10px;
+	}
+
+#news_list{
+	width:730px;
+	margin-top:10px;
+	padding:10px;
+	border:1px solid rgb(204,204,204);
+	border-radius:10px;
+	float:left;}
+#news_list h2{
+	color:rgb(42,84,176);
+	border-bottom:3px solid rgb(42,84,176);
+	padding-bottom:3px;
+	background-image:url(../images/tt_bj.png);
+	background-repeat:no-repeat;
+	padding-left:25px;
+	}
+#news_list ul{
+	clear:both;
+	
+	float:left;
+	width:100%;
+	
+	}
+#news_list ul li{
+	clear:both;
+	height:30px;
+	line-height:30px;
+	vertical-align:middle;
+	width:100%;
+	border-bottom:1px dotted rgb(204,204,204);
+	}
+#news_list ul li a{
+	color:black;
+	}
+#news_list ul li a:hover{
+	color:red;
+	}
+	
+#news_list ul li img{
+	vertical-align:middle;
+	}
+
+#news_list ul li .news_type{
+	color:rgb(102,102,102);
+	float:right;
+	
+	
+	}
+#news_list ul li .pubdate{
+	color:rgb(102,102,102);
+	float:right;
+	margin-right:20px;
+	
+	}
+#news_text_contain h2{
+	color:rgb(42,84,176);
+	border-bottom:3px solid rgb(42,84,176);
+	padding-bottom:3px;
+	background-image:url(../images/tt_bj.png);
+	background-repeat:no-repeat;
+	padding-left:25px;
+	}
+#news_text_contain p{
+	text-indent:20px;
+	color:#c8c8c8);
+	font-size:14px;
+	line-height:20px;
+	}
+#news_comments{
+	clear:both;
+	margin-top:20px;
+	border-top:1px dotted rgb(204,204,204);
+	}
+.comments_form h1{
+	font-size:16px;
+	font-weight:bold;
+	color:rgb(42,84,176);
+	text-align:left;
+	border-bottom:2px solid rgb(42,84,176);
+	background-image:url(../images/tt_bj.png);
+	background-repeat:no-repeat;
+	padding-left:20px;
+	margin-top:5px;
+	}
+.comments_form table{
+	border:1px solid rgb(204,204,204);
+	width:730px;
+	text-align:left;
+	}
+.comments_form table tr{
+	height:20px;
+	}
+.commentor{text-align:right;font-size:14px;}
+.commentor_text{font-size:14px;height:25px; font-size:16px;border:1px solid rgb(204,204,204);color:rgb(204,204,204);}
+.comments_content{text-align:right;}
+
+.comments_contain{height:30px;font-size:14px;}
+.comments_content_text{border:1px solid rgb(204,204,204);font-size:16px;}
+.comments_submit{text-align:center;border:2px groove rgb(204,204,204);height:30px;width:100px; background:url(../images/ad_bj.jpg) repeat-x;font-size:14px;}
+.comments_show{border:1px dotted rgb(204,204,204);margin-top:10px;}
+.comments_show_contain{
+	text-align:left;text-indent:20px;background:#FFF;
+	height:50px;
+	border:1px solid rgb(204,204,204);
+	
+	}
+.comments_show_commentor{
+	height:20px;
+	border:1px solid rgb(204,204,204);
+	text-align:right;color:#808080;
+	}
+	.commentors{margin-right:5px;}
+	.commentor_name{margin-right:5px;}
+	.date{}

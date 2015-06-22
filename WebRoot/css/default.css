@@ -1,0 +1,500 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+		margin:0px;
+		padding:0px;
+		border:0px;
+		}
+	body{
+		margin:0px;
+		padding:0px;
+		font:12px/1.231 Arial,Helvetica,sans-serif;;
+		text-align:center;
+		
+		}
+	a { color:#666666; text-decoration:none;cursor: pointer; }  /*for ie f6n.net*/
+	a:focus{outline:0;} /*for ff f6n.net*/
+	a:hover { text-decoration:underline;color:red}
+	
+	.line{
+		margin-left:15px;
+		margin-right:15px;
+		}
+	#companyname{
+		font-weight:900;
+		font-size:13px;
+		}
+	.mingyan{
+		color:rgb(42,84,176);
+		}
+	ul{
+		list-style:none;}
+	ul li{
+		float:left;
+		}
+	#ming_yan{
+		font-size:24px;
+		font-weight:900;
+		}
+	#hot_line{
+		color:rgb(42,84,176);
+		}
+	#hotno{
+		color:red;
+		font-size:18px;
+		}
+	.more{
+			font-variant:small-caps;
+			font-weight:600;
+			float:right;
+			margin-right:20px;
+			}
+	/********头上部CSS开始*********/
+	#top_container{
+			width:100%;
+			height:170px;
+			background-image:url(../images/top_bj.gif);
+			background-repeat:repeat-x;
+	}
+	#top_container_header{
+		margin:0 auto;
+		position:relative;
+		width:900px;
+		height:30px;
+		line-height:30px;
+		vertical-align:middle;
+		color:rgb(136,136,136);
+		}
+	#top_container_header p{
+		float:left;
+		}
+	#top_container_header ul{
+		float:right;
+		}
+	#top_container_middle{
+		clear:both;
+		margin:0 auto;
+		width:900px;
+		height:90px;
+		}
+	#top_container_middle img{
+		float:left;
+		}
+	#top_container_middle #myhl{
+		margin-top:25px;
+		float:right;
+		}
+	
+	
+	#top_container_middle #myhl	#hot_line{
+		margin-top:5px;
+		}
+	#top_container_footer {
+	width: 100%;
+	height: 46px;
+	border-top:1px solid rgb(215,212,207) ;
+	border-top:1px solid rgb(196,198,195) ;
+	line-height: 46px;
+	background-image:url(../images/navi_bj.jpg);
+	background-repeat:repeat-x;
+	/*background:url(images/index-background-image-repeat.jpg);*/
+}
+/********王勇****开始****/
+#top_container_footer > ul {
+	margin: 0 auto;
+	vertical-align: middle;
+	display: inline-block;
+	
+	
+}
+#top_container_footer > ul > li {
+	width: 125px;
+}
+			/********二级菜单_王勇****开始****
+#links a {
+	font-size: 16px;
+	
+}
+#links > li {
+	padding: 0px;
+}
+#links li .a_title{
+	z-index:1007;
+	color:#666;
+	font-weight:600;
+	display:block;
+	}
+#links li .a_title:hover{
+	color:rgb(187,0,0);
+	border-top:5px solid #333;
+	}
+#links > li:hover {
+	padding-top: 0px;
+	
+	border-left:1px inset ;
+	border-right:1px solid #333;
+	/*background-repeat: no-repeat;
+	background-position:contain;
+	background-size: cover;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+}
+.links_ul {
+	
+	position:absolute;
+	background: url(../images/menu_hover.jpg);
+	background-size: contain;
+	padding:5px;
+	text-align: center;
+	min-width: 115px;
+	border-left:1px solid #333;
+	border-right:1px solid #333;
+	border-bottom:1px solid #333;
+}
+
+.links_ul > li {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.links_ul > li:hover {
+	background-image:url(../images/hw_000469.jpg);
+		
+	
+}
+			********二级菜单_王勇****结束****/
+			
+			
+	/********头上部CSS结束*********/
+	/********头下部CSS开始*********/
+	#middle_container{
+		clear:both;
+	}
+	#middle_container #middle_flash{
+		margin-bottom:1px;
+		background-image:url(../images/bj.png);
+		background-repeat:repeat;	
+		}
+	#middle_container #ad{
+		width:100%;
+		height:35px;
+		background-image:url(../images/ad_bj.jpg);
+		background-repeat:repeat-x;
+		
+		}
+	#ad #ad_{
+		margin:0 auto;
+		width:900px;
+		line-height:30px;
+		}
+	#ad #ad_ #dt{
+		float:left;
+		color:red;
+		font-weight:700;
+		vertical-align:middle;
+		}
+	#ad #ad_ #title{
+		float:left;
+		}
+	/********头下部CSS结束*********/	
+
+	/******产品CSS开始************/
+		
+	#products{
+		width:100%;
+		height:600px;
+		
+		background-image:url(../images/bj.png);
+		background-repeat:repeat;
+		}
+	#middle_products{
+		margin:0 auto;
+		width:910px;
+		}
+	
+	#middle_products #products_center{
+		width:100%;
+		height:78px;
+		background-image:url(../images/pc_bj.png);
+		background-repeat:no-repeat;
+		}
+	#middle_products #products_center h1{
+		color:#FFF;
+		padding-top:40px;
+		}
+	#middle_products #products_navi{
+		float:left;
+		width:200px;
+		}
+	#middle_products #products_navi dl{
+		clear:both;
+		margin-top:10px;
+		text-align:left;
+		}
+	#middle_products #products_navi dl dt{
+		text-align:left;
+		border-bottom:2px solid rgb(42,84,176);
+	}
+	#middle_products #products_navi dl dt img{
+		margin-left:20px;
+		}
+	#middle_products #products_navi dl dt span{
+		font-size:14px;
+		margin-left:5px;
+		}
+	#middle_products #products_navi dl dd{
+		border-bottom:2px dotted rgb(136,136,136);
+		height:25px;
+		line-height:25px;
+		vertical-align:middle;
+		font-size:14px;
+		
+		}
+	#middle_products #products_navi dl dd a{
+		margin-left:60px;
+		}
+	#middle_products #products_navi li{
+		clear:left;
+		border-bottom:2px dotted rgb(136,136,136);
+		width:180px;
+		height:25px;
+		line-height:25px;
+		vertical-align:middle;
+		padding-left:80px;
+		}
+	.products_title	a{
+		
+		color:black;
+		}
+	#products_show{
+		float:right;
+		
+		width:700px;
+		
+		}
+		/******产品CSS结束************/
+		/******公司简介CSS开始************/
+		#company{
+			background-image:url(../images/bj.png);
+			
+			}
+		#middle_company{
+			width:100%;
+			height:35px;
+			background-image:url(../images/ad_bj.jpg);
+			background-repeat:repeat-x;
+			line-height:35px;
+			font-variant:small-caps;
+			font-size:16px;
+			font-weight:bold;
+			font-family:"宋体";
+			vertical-align:middle;
+			}
+		#middle_company_container{
+			width:900px;
+			margin:0 auto;
+			}
+		
+		#middle_company_text{
+			margin-top:10px;
+			float:left;
+			width:450px;
+			text-align:left;
+			line-height:20px;
+			}
+		#middle_company_text h1{
+			font-size:16px;
+			color:rgb(42,84,176);
+			}
+		#middle_company_text p{
+			text-indent:25px;
+			margin-top:10px;
+			border-top:dotted 1px rgb(136,136,136);
+			border-bottom:dotted 1px rgb(136,136,136);
+			}
+		#middle_company_text #gotous a{
+			margin-top:5px;
+			margin-right:10px;
+			float:right;
+			font-weight:bolder;
+			}
+		#middle_company_text #gotous a{
+			color:rgb(42,84,176);
+			}
+		#middle_company_text #gotous a:hover{
+			color:red;
+			}
+		
+		#middle_company_img{
+			float:right;
+			width:400px;
+			}
+		/******公司简介CSS结束************/
+		/******工程案例CSS开始************/
+		#project{
+			background-image:url(../images/bj.png);
+			background-repeat:repeat;
+			margin-top:1px;
+			
+			}
+			
+		#middle_project,#middle_news{
+			clear:both;
+			width:100%;
+			height:35px;
+			background-image:url(../images/ad_bj.jpg);
+			background-repeat:repeat-x;
+			line-height:35px;
+			font-variant:small-caps;
+			font-size:16px;
+			font-weight:bold;
+			font-family:"宋体";
+			vertical-align:middle;
+			}
+		#middle_project_contain{
+			clear:both;
+			width:900px;
+			margin:0 auto;
+			text-align:left;
+			}
+		#middle_project_text{
+			border-bottom:3px solid rgb(42,84,176);
+			}
+		#middle_project_text .more{
+			margin-top:33px;}
+		#middle_project_text .h1_tt{
+			margin-left:20px;
+			margin-bottom:5px;
+			}
+		#middle_project_text h1{
+			margin-top:20px;
+			color:rgb(42,84,176);
+			font-weight:bolder;
+			word-spacing:15px;
+			display:inline-block;
+			margin-bottom:5px;
+			}
+		
+		/******工程案例CSS结束************/	
+		#news{
+			background-image:url(../images/bj.png);
+			}
+		/******新闻CSS开始************/
+		#middle_news_contain{
+			width:900px;
+			height:255px;
+			margin:0 auto;
+			text-align:left;
+			}
+		#middle_news_contain li{
+			clear:both;
+			line-height:40px;
+			height:40px;
+			
+			width:440px;
+			text-align:left;
+			border-bottom:dotted 1px rgb(136,136,136);
+			}
+		#middle_news_contain li a{
+			color:#000;
+			margin-left:10px;
+			font-size:14px;
+			}
+		#middle_news_contain li a:hover{
+			color:red;
+			}
+		#middle_news_contain .arrow{
+			
+			width:8px;
+			height:13px;
+			vertical-align:middle;
+			}
+		#middle_news_contain .news_date{
+			float:right;
+			
+			margin-right:3px;
+			
+			}
+		#middle_news_contain .h2_tt{
+			width:21px;
+			height:20px;
+			margin-left:15px;
+			vertical-align:middle;
+			}
+		#middle_news_contain .more{
+			
+			margin-top:15px;
+			}
+		#middle_news_contain #profession_news{
+			width:440px;
+			float:left;
+			margin-right:20px;
+			}
+		#middle_news_contain h2{
+			margin-top:5px;
+			color:rgb(42,84,176);
+			display:inline-block;
+			margin-left:10px;
+			padding-bottom:5px;
+			}
+		#middle_news_contain dt{
+			border-bottom:3px solid rgb(42,84,176);
+			line-height:30px;
+			}
+		
+		#middle_news_contain #company_news{
+			width:440px;
+			float:left;
+			}
+		
+		/******新闻CSS结束************/
+		/******页脚footer开始************/
+		#footer{
+			width:100%;
+			height:150px;
+			background-image:url(../images/ft_bj.png);
+			background-repeat:repeat-x;
+			clear:left;
+			}
+		#footer_links{
+			width:900px;
+			height:40px;
+			line-height:40px;
+			vertical-align:middle;
+			margin:0 auto;
+			font-size:16px;
+			}
+		#footer_links a{
+			color:#C8C8C8;
+			}
+		#footer_links a:hover{
+			color:red;
+			}	
+		#footer_links .line{
+			margin-left:25px;
+			margin-right:25px;
+			color:#C8C8C8;
+			}
+		#footer_links li{
+			width:125px;
+			}
+		#footer_links li #hidden_line{
+			visibility:hidden;
+			}
+		#footer_contain{
+			padding-top:10px;
+			clear:left;
+			width:900px;
+			margin:0 auto;
+			
+			}
+		#footer_contain ul{
+			margin-left:10px;
+			display:inline-block;
+			}
+		#footer_contain li{
+			clear:left;
+			}
+		/******页脚footer结束************/

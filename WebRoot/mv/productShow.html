@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/pd_show.css" rel="stylesheet" type="text/css" />
+<link href="css/default.css" rel="stylesheet" type="text/css" />
+<link href="css/marquee.css" rel="stylesheet" type="text/css" />
+<link href="css/products.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/menu.css" type="text/css" media="screen, projection"/>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/mobilyselect.js" type="text/javascript"></script>
+<script src="js/init.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.imagezoom.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.dropdownPlain.js"></script>
+<title>通华智电科技有限公司</title>
+</head>
+<body>
+<div id="head">
+    <div id="top_container">
+        <div id="top_container_header">
+        
+            <p>欢迎光临<span id="companyname"><a href="">通华智电科技有限公司</a></span>官方网站!</p>
+            <ul>
+                <li><a href="#">登录</a><span class="line">|</span></li>
+                <li><a href="#">收藏首页</a><span class="line">|</span></li>
+                <li><a href="#">网站地图</a><span class="line">|</span></li>
+                <li><a href="#">在线留言</a><span class="line">|</span></li>
+                <li><a href="#">用户统计</a></li>
+            </ul>
+          
+        </div>
+        <div id="top_container_middle">
+            <img src="images/logo1.png" height="80" />
+            <div id="myhl">
+                <p id="ming_yan" class="mingyan">真诚合作，讲求信誉，增进友谊，共同发展</p>
+                <p id="hot_line" class="hotline">客户支持热线：<span id="hotno">400-618-9398</span></p>
+            </div>
+        </div>
+        <div id="top_container_footer">
+            <ul class="dropdown">
+            	 <li><a href="#">通华首页</a>
+                    <ul class="sub_menu">
+                        
+                    </ul>
+        		</li>
+                <li><a href="menu/company/aboutUs.html">关于通华</a>
+                    <ul class="sub_menu">
+                         <li><a href="menu/company/companyCulture.html">企业文化</a></li>
+                         <li><a href="menu/company/companyEnviroment.html">公司环境</a></li>
+                         <li><a href="menu/company/companyBusiess.html">公司业务</a></li>
+                         <li><a href="menu/company/employeeList.html">人才招聘</a></li>
+                    </ul>
+        		</li>
+               <!--   <li><a href="menu/news/newsList.html">新闻资讯</a>
+                    <ul class="sub_menu">
+                        
+                         <li><a href="menu/news/newsList.html">行业新闻</a></li>
+                         <li><a href="menu/news/newsList.html">媒体聚焦</a></li>
+                         <li><a href="menu/news/newsList.html">公司动态</a></li>
+                    </ul>
+        		</li> -->
+        		
+        		 <li><a href="newsList.do">新闻资讯</a>
+                 
+                 <ul class="sub_menu">
+            	   <li><a href="newsList.do?typeid=1">公司动态</a></li>	
+                
+                   <li><a href="newsList.do?typeid=2">行业新闻</a></li> 
+               
+                   <li><a href="newsList.do?typeid=3">媒体聚焦</a></li>
+                 </ul>
+        		</li>
+        		
+               <!--   <li><a href="menu/products/productsList.html">产品中心</a>
+                    <ul class="sub_menu">
+                         <li><a href="menu/products/productsList.html">智能家居</a></li>
+                         <li><a href="menu/products/productsList.html">智能照明</a></li>
+                         <li><a href="menu/products/productsList.html">酒店控制</a></li>
+                         <li><a href="menu/products/productsList.html">可视对讲</a></li>
+                    </ul>
+        		</li> -->
+        		
+        		
+        		<li><a href="productsListAll.do">产品中心</a>
+                    <ul>
+                        #foreach($productstype in $listType1)
+                         <li><a href="productsListMenu.do?prod=${productstype.menuid}">$productstype.menuname</a></li>          
+                        #end              
+                    </ul>  
+        		</li>
+        		
+        		
+                 <li><a href="supportsListAll.do">技术支持</a>
+                    <ul class="sub_menu">
+                         
+                    </ul>
+        		</li>
+                 <li><a href="menu/projects/projectsList.html">工程案例</a>
+                    <ul class="sub_menu">
+                      
+                    </ul>
+        		</li>
+                 <li><a href="menu/experience/experienceList.html">体验中心</a>
+                   
+        		</li>
+                 <li><a href="contactUs.html">联系我们</a>
+                    <ul class="sub_menu">
+                       
+                    </ul>
+        		</li>               
+           </ul>    
+        </div>
+    </div>
+    <div id="middle_container">
+         <div id="middle_flash">
+                <SCRIPT language=javascript src="images/portal_flash.js" type=text/javascript></SCRIPT>
+         </div>
+
+         <div id="ad">
+                <div id="ad_">
+                    <span id="dt">动态：</span> <span id="title"> <a href="#">房地产商将成智能家居普及的最有利推动者？</a> </span>
+                </div>
+         </div>
+    </div>
+</div>
+<div id="middle">
+	<div id="products">
+        <div id="middle_products">	
+             <div id="products_navi">
+                <div id="products_center" style="text-align:center"><h1>智能产品中心</h1></div>
+                <!-- 产品菜单 ,这个列表对本页面实际没有啥作用，显示效果为先的结果-->
+            
+                <dl>
+                   #set($i = 0)
+                  #foreach($productstype in $listType1)
+                       <!--   #set($productmenu = "$productstype.menuid") -->     
+                         <dt><img src="images/navi_bj.png" /><span class="products_title"><a href="productsListMenu.do?prod=${productstype.menuid}">$productstype.menuname</a></span></dt>
+                         #foreach( $producttype in $listTypee2.get($i))
+                         <dd><a href="productsListType.do?typeid=$producttype.typeid">$producttype.typename</a></dd>   
+                         #end
+                         #set($i = $i +1)
+                  #end    
+                </dl>   
+                        
+                        
+                        
+                </div>
+            </div>     
+            <div id="products_show">           
+                  <div id="position">
+                        <span id="current_posiiotn">当前位置：</span>
+                        <span>首页 >> 产品中心 >> $products.typename >> $products.title<!-- 2×300W&nbsp;&nbsp;Zigbee双联调光器 --></span>
+                  </div>
+                  
+                  
+                  
+                  <!--   具体产品图片显示 -->
+                  <div id="products_show_contain">
+                        <div id="products_img"> 
+                           <div class="box">
+                                <div class="tb-booth tb-pic tb-s310"> <a href="pd_img/big_smart_home/71841.85.jpg"><img src="pd_img/mid_smart_home/71841.85_mid.jpg" alt="细节展示放大镜特效" rel="pd_img/small_smart_home/71841.85.jpg" class="jqzoom" /></a> </div>
+                                <ul class="tb-thumb" id="thumblist">
+                                    <li class="tb-selected">
+                                        <div class="tb-pic tb-s40"><a href="javascript:void(0);"><img src="$!products.smallpicaddress" mid="$!products.smallpicname" big="$!products.source"></a></div>
+                                    </li>
+                                
+                                   <!--  <li class="tb-selected">
+                                        <div class="tb-pic tb-s40"><a href="javascript:void(0);"><img src="pd_img/small_smart_home/71841.85_small.jpg" mid="pd_img/mid_smart_home/71841.85_mid.jpg" big="pd_img/big_smart_home/71841.85.jpg"></a></div>
+                                    </li> -->
+                                 <!--    <li>
+                                        <div class="tb-pic tb-s40"><a href="javascript:void(0);"><img  src="pd_img/small_smart_home/71842.07_small.jpg" mid="pd_img/mid_smart_home/71842.07_mid.jpg" big="pd_img/big_smart_home/71842.07.jpg"></a></div>
+                                    </li>
+                                    <li>
+                                        <div class="tb-pic tb-s40"><a href="javascript:void(0);"><img src="pd_img/small_smart_home/71842.27_small.jpg" mid="pd_img/mid_smart_home/71842.27_mid.jpg" big="pd_img/big_smart_home/71842.27.jpg"></a></div>
+                                    </li>
+                                    <li>
+                                        <div class="tb-pic tb-s40"><a href="javascript:void(0);"><img src="pd_img/small_smart_home/71842.43_small.jpg" mid="pd_img/mid_smart_home/71842.43_mid.jpg" big="pd_img/big_smart_home/71842.43.jpg"></a></div>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            
+                            <script type="text/javascript">
+								$(document).ready(function(){
+								
+									$(".jqzoom").imagezoom();
+									
+									$("#thumblist li a").click(function(){
+										$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+										$(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+										$(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+									});
+								
+								});
+							</script>
+                        </div>
+                        
+                        
+                        <!-- 具体产品显示 -->
+                        <div id="products_text">
+                            <h1>$products.title</h1>
+                            <p><span class="products_text_title">产品分类:</span>$products.typename</span></p>
+                            <p><span class="products_text_title">产品规格:</span>$products.content</p>
+                            <p><span class="products_text_title">订购热线:</span><span class="hotline">400-618-9398</span></p>
+                        </div>
+                        
+       
+                        <!-- 评论 -->
+                  		<div id="products_comments">
+                  		<div class="comments_form">
+                        	<h1>评论</h1>
+                  		<form action="productsComment.do" method="post">
+                          		<table width="700" border="1" bordercolor="#A0A0A4"> 
+                                	<tr>
+                                    	<td class="commentor">评论人：</td>
+                                        <td><input class="commentor_text" type="text" name="commentor" /></td>
+                                    </tr>
+                                    <tr>
+                                    	<td class="comments_contain">评论内容：</td>
+                                        <td><textarea class="comments_content_text" name="commentscontent" cols="70" rows="3">请输入您的评论！</textarea></td>
+                                    </tr>
+                                    <tr>
+                                    	<td colspan="2" style="text-align:center;"><input class="comments_submit" type="submit" name="submit" value="发表评论" border="2" style="" /></td>
+                                    </tr>
+                                </table>
+                                  <input type = "hidden" name = "contentid" value = "$products.contentid">  
+                        	</form>
+                        </div>
+                        
+                        
+                        <!-- 评论显示 -->   
+                             #foreach($comment in $listcomment)
+                        	<div class="comments_show_contain">$!comment.commentscontent</div>
+                            <div class="comments_show_commentor">
+                            	<span class="commentors">评论人</span><span class="commentor_name">$!comment.commentor</span><span class="date">$datee.format('yyyy-MM-dd', $comment.operatetime)</span>
+                            </div>	
+                            #end 
+                            
+                            
+                        </div>
+                  </div>
+                  </div>
+                  
+            </div>
+        </div> 
+	</div>
+</div>
+
+<div id="footer">
+	 <div id="footer_links">
+            <ul>
+                <li><a hreg="#">关于通华</a><span class="line">|</span></li>
+                <li><a hreg="#">用户登录</a><span class="line">|</span></li>
+                <li><a hreg="#">网站地图</a><span class="line">|</span></li>
+                <li><a hreg="#">在线留言</a><span class="line">|</span></li>
+                <li><a hreg="#">用户统计</a><span class="line">|</span></li>
+                <li><a hreg="#">人才招聘</a><span class="line">|</span></li>
+                <li><a hreg="#">联系我们</a><span class="line" id="hidden_line">|</span></li>  
+            </ul>
+        </div>
+        <div id="footer_contain">
+       		<img src="images/logo1.png" />	
+            <ul>
+                <li>
+                Copyright 2014 江西通华智电科技有限公司 版权所有</li>
+                <li>
+                地址：中国南昌市红谷滩新区碟子湖大道555号时间广场A座8层</li>
+                <li>网址：<a href="www.tuwa-ie.com">www.tuwa-ie.com</a></li>
+                <li>邮箱：<a href="mailto:jxthzd@tuwa-ie.com">jxthzd@tuwa-ie.com</a></li>
+                <li>电话：86-791-83802330传真：86-791-83859553</li> 
+            </ul>  
+        </div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image:url(../images/bj.png);
+	background-repeat:repeat;
+	}
+#middle_products{
+		margin:0 auto;
+		width:970px;
+		
+		}
+#products_show{
+	width:754px;
+	float:left;
+	margin-left:10px;
+	}
+#products_show #position{
+	background-image:url(../images/r_nav.gif);
+	background-repeat:no-repeat;
+	height:36px;
+	line-height:36px;
+	vertical-align:middle;
+	color:rgb(42,84,176);
+	padding-left:20px;
+	text-align:left;
+	}
+#products_show #products_show_contain{
+	margin-top:10px;
+	padding:10px;
+	border:1px solid rgb(204,204,204);
+	border-radius:10px;
+	min-height:500px;
+	
+	}
+
+#products_show_contain #products_text{
+	
+	text-align:left;
+	margin-top:10px;
+	margin-left:10px;
+	width:350px;
+	float:left;
+	
+	
+	}
+#products_show_contain #products_text h1{
+	text-align:center;
+	font-size:16px;
+	color:rgb(206,25,25);
+	border-bottom:1px dotted rgb(204,204,204);
+	padding-bottom:5px;
+	}
+#products_show_contain #products_text p{
+	font-size:14px;
+	line-height:30px;
+	margin-top:10px;}
+.products_text_title{
+	font-weight:bold;
+	margin-right:10px;
+	}
+.hotline{
+	color:red;
+	font-size:18px;
+	}
+#products_comments{
+	clear:both;
+	margin-top:20px;
+	border-top:1px dotted rgb(204,204,204);
+	}
+.comments_form h1{
+	font-size:16px;
+	font-weight:bold;
+	color:rgb(42,84,176);
+	text-align:left;
+	border-bottom:2px solid rgb(42,84,176);
+	background-image:url(../images/tt_bj.png);
+	background-repeat:no-repeat;
+	padding-left:20px;
+	margin-top:5px;
+	}
+.comments_form table{
+	border:1px solid rgb(204,204,204);
+	width:730px;
+	text-align:left;
+	}
+.comments_form table tr{
+	height:20px;
+	}
+.commentor{text-align:right;font-size:14px;}
+.commentor_text{font-size:14px;height:25px; font-size:16px;border:1px solid rgb(204,204,204);color:rgb(204,204,204);}
+.comments_content{text-align:right;}
+
+.comments_contain{height:30px;font-size:14px;}
+.comments_content_text{border:1px solid rgb(204,204,204);font-size:16px;}
+.comments_submit{text-align:center;border:2px groove rgb(204,204,204);height:30px;width:100px; background:url(../images/ad_bj.jpg) repeat-x;font-size:14px;}
+.comments_show{border:1px dotted rgb(204,204,204);margin-top:10px;}
+.comments_show_contain{
+	text-align:left;text-indent:20px;background:#FFF;
+	height:50px;
+	border:1px solid rgb(204,204,204);
+	
+	}
+.comments_show_commentor{
+	height:20px;
+	border:1px solid rgb(204,204,204);
+	text-align:right;color:#808080;
+	}
+	.commentors{margin-right:5px;}
+	.commentor_name{margin-right:5px;}
+	.date{}
+	/* box */
+.box { width:320px; margin:10px; float:left;}
+.tb-pic a { display:table-cell; text-align:center; vertical-align:middle; }
+.tb-pic a img {vertical-align:middle; }
+.tb-pic a {*display:block;*font-family:Arial;*line-height:1;}
+.tb-thumb {margin:10px 0 0; overflow:hidden; }
+.tb-thumb li {background:none repeat scroll 0 0 transparent; float:left; height:42px; margin:0 6px 0 0; overflow:hidden; padding:1px; }
+.tb-s310, .tb-s310 a { height:250px; width:250px; }
+.tb-s310, .tb-s310 img {max-height:250px; max-width:250px; }
+.tb-s310 a { *font-size:271px;}
+.tb-s40 a { *font-size:35px;}
+.tb-s40, .tb-s40 a { height:40px; width:40px; }
+.tb-booth { border:1px solid #CDCDCD; position:relative; z-index:1; }
+.tb-thumb .tb-selected { background:none repeat scroll 0 0 #C30008; height:40px; padding:2px; }
+.tb-thumb .tb-selected div { background-color:#FFFFFF; border:medium none; }
+.tb-thumb li div { border:1px solid #CDCDCD; }
+div.zoomDiv { z-index:999; position:absolute; top:0px; left:0px; width:200px; height:200px; background:#ffffff; border:1px solid #CCCCCC; display:none; text-align:center; overflow:hidden; }
+div.zoomMask { position:absolute; background:url("../images/mask.png") repeat scroll 0 0 transparent; cursor:move; z-index:1; }
